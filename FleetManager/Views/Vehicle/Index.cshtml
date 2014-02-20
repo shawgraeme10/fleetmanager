@@ -1,0 +1,123 @@
+﻿@model IEnumerable<FleetManager.Models.Vehicle>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Reg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Make)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VehicleType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BodyType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FuelType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxClass)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Transmission)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EngineSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Colour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Base)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TankSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoadTaxDue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MotDue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServiceDue)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Make)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VehicleType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BodyType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FuelType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxClass)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transmission)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EngineSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Colour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Base)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TankSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RoadTaxDue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MotDue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServiceDue)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
