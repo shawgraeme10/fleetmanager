@@ -15,7 +15,7 @@
             @Html.DisplayNameFor(model => model.Reg)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Make)
+            Make
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Model)
@@ -68,7 +68,7 @@
             @Html.DisplayFor(modelItem => item.Reg)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Make)
+            @Html.DisplayFor(modelItem => item.Make.Type)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Model)
@@ -77,19 +77,19 @@
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.VehicleType)
+            @Html.DisplayFor(modelItem => item.VehicleType.Type)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.BodyType)
+            @Html.DisplayFor(modelItem => item.BodyType.Type)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.FuelType)
+            @Html.DisplayFor(modelItem => item.FuelType.Type)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.TaxClass)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Transmission)
+            @Html.DisplayFor(modelItem => item.Transmission.Type)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.EngineSize)

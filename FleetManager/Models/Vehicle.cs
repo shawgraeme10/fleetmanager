@@ -12,14 +12,27 @@ namespace FleetManager.Models
         [Key]
         public int Id { get; set; }
         public string Reg { get; set; }
-        public string Make { get; set; }
+
+        public int MakeId { get; set; }
+        public virtual Make Make { get; set; }
+
         public string Model { get; set; }
         public string Description { get; set; }
-        public string VehicleType { get; set; }
-        public string BodyType { get; set; }
-        public string FuelType { get; set; }
+
+        public int VehicleTypeId { get; set; }
+        public virtual VehicleType VehicleType { get; set; }
+
+        public int BodyTypeId { get; set; }
+        public virtual BodyType BodyType { get; set; }
+
+        public int FuelTypeId { get; set; }
+        public virtual FuelType FuelType { get; set; }
+
         public string TaxClass { get; set; }
-        public string Transmission { get; set; }
+
+        public int TransmissionId { get; set; }
+        public virtual Transmission Transmission { get; set; }
+
         public int EngineSize { get; set; }
         public string Colour { get; set; }
         public string Base { get; set; }

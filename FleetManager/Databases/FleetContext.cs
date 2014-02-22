@@ -13,10 +13,17 @@ namespace FleetManager.Databases
     public class FleetContext : DbContext
     {
         public DbSet<Vehicle> vehicles { get; set; }
+        public DbSet<Make> makes { get; set; }
+        public DbSet<BodyType> bodies { get; set; }
+        public DbSet<FuelType> fuels { get; set; }
+        public DbSet<VehicleType> vehicleTypes { get; set; }
+        public DbSet<Transmission> transmissions { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+            
         }
     }
 }
