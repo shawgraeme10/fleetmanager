@@ -1,4 +1,17 @@
-﻿html {
+﻿#wrap {
+   width:100%;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:20%;
+}
+#right_col {
+   float:right;
+   width:80%;
+}
+
+html {
     background-color: #e2e2e2;
     margin: 0;
     padding: 0;
