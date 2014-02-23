@@ -42,5 +42,8 @@ namespace FleetManager.Models
         //public int Co2Level { get; set; }
         public string ServiceDue { get; set; }
 
+        public string CurrentLat { get; set; }
+        public string CurrentLng { get; set; }
+
     }
 }

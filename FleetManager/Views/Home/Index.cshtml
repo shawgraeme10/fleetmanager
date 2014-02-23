@@ -22,6 +22,7 @@
         <h2>Vehicle</h2>
         <table>
             <tr>
+                <th></th>
                 <th>Reg</th>
                 <th>Make</th>
                 <th>Model</th>
@@ -30,6 +31,9 @@
             @foreach (var item in Model)
             {
             <tr>
+                <td>
+                    @Html.ActionLink("Locate", "Details", new { controller = "Vehicle", id = item.Id })
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Reg)
                 </td>

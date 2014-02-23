@@ -121,6 +121,9 @@
         @Html.DisplayFor(model => model.ServiceDue)
     </div>
 </fieldset>
+<div>
+    <iframe height="400px" width="100%" src="http://arcticpepper.com/map.html?center=@Model.CurrentLat:@Model.CurrentLng"></iframe>
+</div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
